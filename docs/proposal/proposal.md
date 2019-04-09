@@ -1,6 +1,7 @@
 ---
-layout: default
 ---
+<link rel="stylesheet" href='../markdown.css'>
+
 April 8, 2019
 
 # Subsurface Scattering (SSS) Proposal
@@ -9,7 +10,7 @@ David Wang, Rahul Malayappan, William Gan
 
 ## Overview
 
-For this project, we plan to implement various subsurface scattering models to produce realistic-looking images for translucent materials, such as skin. We also want to compare the different models in terms of their image quality, performance, simplicity, etc.
+For this project, we plan to implement various subsurface scattering models to produce realistic-looking images for translucent materials, such as skin. We also want to compare the different models in terms of their image quality, performance, and simplicity.
 
 ## Problem
 
@@ -20,6 +21,8 @@ For our pathtracer so far, we have only considered surface level scattering. Tha
 In order to realistically render surfaces such as milk, leaves, and marble, it is important that we account for subsurface scattering. However, this is challenging because subsurfacing scattering doesn't follow the standard BRDF model. We need an additional parameter to represent the outgoing point on the surface, and this leads to a function referred to as the Bi-directional Scattering-Surface Reflectance Distribution Function (BSSRDF). Furthermore, there is a complex theory behind how the BSSRDF should act due to the fact that surfaces such as skin have many different layers. And finally, in order to efficiently implement this, there are approximations and tricks which present challenges in themselves.
 
 ## Goals
+
+# 
 
 ## Schedule
 
@@ -38,6 +41,4 @@ In order to realistically render surfaces such as milk, leaves, and marble, it i
 
 For hardware, two of us have pretty powerful computers that can serve as a baseline. On top of that, we will use the EECS Linux machines. If need be, we can also use free credits to rent time on GCP or AWS, but based on skimming the papers mentioned above, it seems like that won't be necessary.
 
-For software, we intend to extend our Pathtracer code to implement SSS.
-
-[comment]: # (TODO: Add more software. Are we going to try to implement from scratch or use PBRT / Mitsuba / etc.?)
+For software, ideally we can completely implement SSS by extending our Pathtracer code. However, since the BSSRDF may involve more complex abstraction structures, we might base our code off a library like PBRT's. Their library actually implements an SSS of their own, but it is different from ours and we would only use their higher level abstractions. Rather, we could actually compare our results to theirs in the end.
