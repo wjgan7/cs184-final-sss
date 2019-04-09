@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Subsurface Scattering
 ---
 <link rel="stylesheet" href='markdown.css'>
 Created April 8, 2019

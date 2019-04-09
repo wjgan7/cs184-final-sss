@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Proposal
 ---
 <link rel="stylesheet" href='../markdown.css'>
 
@@ -25,15 +26,21 @@ In order to realistically render surfaces such as milk, leaves, and marble, it i
 
 ### What We Plan to Deliver
 
-We plan on delivering are images of cream in a glass and a marble / wax version of one our dae/sky files from Pathtracer. We believe we can accomplish this because these materials are relatively isotropic and there are simple, well-known models for them. For example, the Jensen (2001) paper has albedo and other parameter values for cream that we can use. We also believe that with the plethora of coding resources available (Pathtracer being one of them, and also PBRT) that we can have the code to generate these.
+We plan on delivering images of cream in a glass and a marble / wax version of one our dae / sky files from Pathtracer. We believe we can accomplish this because these materials are relatively isotropic and there are simple, well-known models for them. For example, the Jensen (2001) paper has albedo and other parameter values for cream that we can use. We also believe that with the plethora of coding resources available (Pathtracer being one of them, and also PBRT) that we have the code to generate these.
 
 We want the cream in our glass to have this appearance.
 ![](cream.png)
 
-We want
-![]
+We want our wax image to look like one of these.
+![](wax_statue.png)
 
 ### What We Hope to Deliver
+
+We hope to deliver an image of a human face. This will be harder because skin has multiple layers and because we will probably need to use a tool (e.g. Blender) to create a model of the face. However, measured parameters exist for different layers of the skin so we believe it is possible. Additionally, if we get this working, we would like to compare what the human face looks like with the standard single-layer BSSRDF model and a multi-layered one, and display graphs comparing their runtime.
+
+Here's an image of a face we hope to render.
+
+![](face.png)
 
 ## Schedule
 
@@ -42,8 +49,8 @@ We want
 ### References
 
 1. Kind of the "big" paper on SSS. [Jensen et al. *A practical model for subsurface light transport*](https://dl.acm.org/citation.cfm?id=383319)
-2. For multi-layered SSS e.g. skin. [Donner and Jensen. *Light diffusion in multi-layered translucent materials*](https://dl.acm.org/citation.cfm?id=1073308)
-3. A slightly different model than [1] that we wish to compare with. [d'Eon and Irving. *A quantized-diffusion model for rendering translucent materials*](https://dl.acm.org/citation.cfm?id=1964951)
+2. For multi-layered SSS e.g. skin. We wish to use this for comparison. [Donner and Jensen. *Light diffusion in multi-layered translucent materials*](https://dl.acm.org/citation.cfm?id=1073308)
+3. A slightly different model than [1] and [2] that we may compare with. [d'Eon and Irving. *A quantized-diffusion model for rendering translucent materials*](https://dl.acm.org/citation.cfm?id=1964951)
 4. [PBRT](http://www.pbr-book.org/3ed-2018/contents.html) for reference on SSS in general.
 5. [Some random note](http://www.cs.cornell.edu/courses/cs667/2005sp/notes/09wang.pdf) from a Cornell course that might be helpful.
 6. [A Wikipedia article](https://en.wikipedia.org/wiki/Radiative_transfer_equation_and_diffusion_theory_for_photon_transport_in_biological_tissue) on radiative transfer and diffusion theory, which are important concepts in SSS.
