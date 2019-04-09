@@ -1,8 +1,9 @@
 ---
+layout: default
 ---
 <link rel="stylesheet" href='../markdown.css'>
 
-April 8, 2019
+Created April 8, 2019
 
 # Subsurface Scattering (SSS) Proposal
 
@@ -22,7 +23,17 @@ In order to realistically render surfaces such as milk, leaves, and marble, it i
 
 ## Goals
 
-# 
+### What We Plan to Deliver
+
+We plan on delivering are images of cream in a glass and a marble / wax version of one our dae/sky files from Pathtracer. We believe we can accomplish this because these materials are relatively isotropic and there are simple, well-known models for them. For example, the Jensen (2001) paper has albedo and other parameter values for cream that we can use. We also believe that with the plethora of coding resources available (Pathtracer being one of them, and also PBRT) that we can have the code to generate these.
+
+We want the cream in our glass to have this appearance.
+![](cream.png)
+
+We want
+![]
+
+### What We Hope to Deliver
 
 ## Schedule
 
