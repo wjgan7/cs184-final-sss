@@ -1,0 +1,739 @@
+/* Adapted from the HackMD.io CSS */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    margin: auto;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+body::before {
+    display: table;
+    content: ""
+}
+
+body::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+body>*:first-child {
+    margin-top: 0 !important;
+}
+
+body>*:last-child {
+    margin-bottom: 0 !important;
+}
+
+body a:not([href]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+body .absent {
+    color: #c00;
+}
+
+body .anchor {
+    float: left;
+    padding-right: 4px;
+    margin-left: -20px;
+    line-height: 1
+}
+
+body .anchor:focus {
+    outline: none;
+}
+
+body p,
+body blockquote,
+body ul,
+body ol,
+body dl,
+body table,
+body pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+body hr {
+    height: 0.25em;
+    padding: 0;
+    margin: 24px 0;
+    background-color: #e7e7e7;
+    border: 0;
+}
+
+body blockquote {
+    font-size: 16px;
+    padding: 0 1em;
+    color: #777;
+    border-left: 0.25em solid #ddd;
+}
+
+body blockquote>:first-child {
+    margin-top: 0;
+}
+
+body blockquote>:last-child {
+    margin-bottom: 0;
+}
+
+body kbd {
+    display: inline-block;
+    padding: 3px 5px;
+    font-size: 11px;
+    line-height: 10px;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fcfcfc;
+    border: solid 1px #ccc;
+    border-bottom-color: #bbb;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #bbb;
+}
+
+body .loweralpha {
+    list-style-type: lower-alpha;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+body h1 .octicon-link,
+body h2 .octicon-link,
+body h3 .octicon-link,
+body h4 .octicon-link,
+body h5 .octicon-link,
+body h6 .octicon-link {
+    color: #000;
+    vertical-align: middle;
+    visibility: hidden;
+}
+
+body h1:hover .anchor,
+body h2:hover .anchor,
+body h3:hover .anchor,
+body h4:hover .anchor,
+body h5:hover .anchor,
+body h6:hover .anchor {
+    text-decoration: none;
+}
+
+body h1:hover .anchor .octicon-link,
+body h2:hover .anchor .octicon-link,
+body h3:hover .anchor .octicon-link,
+body h4:hover .anchor .octicon-link,
+body h5:hover .anchor .octicon-link,
+body h6:hover .anchor .octicon-link {
+    visibility: visible;
+}
+
+body h1 tt,
+body h1 code,
+body h2 tt,
+body h2 code,
+body h3 tt,
+body h3 code,
+body h4 tt,
+body h4 code,
+body h5 tt,
+body h5 code,
+body h6 tt,
+body h6 code {
+    font-size: inherit;
+}
+
+body h1 {
+    padding-bottom: 0.3em;
+    font-size: 2em;
+    border-bottom: 1px solid #eee;
+}
+
+body h2 {
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    border-bottom: 1px solid #eee;
+}
+
+body h3 {
+    font-size: 1.25em;
+}
+
+body h4 {
+    font-size: 1em;
+}
+
+body h5 {
+    font-size: 0.875em;
+}
+
+body h6 {
+    font-size: 0.85em;
+    color: #777
+}
+
+body ul,
+body ol {
+    padding-left: 2em
+}
+
+body ul.no-list,
+body ol.no-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+body ul ul,
+body ul ol,
+body ol ol,
+body ol ul {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+body li>p {
+    margin-top: 16px
+}
+
+body li+li {
+    margin-top: 0.25em;
+}
+
+body dl {
+    padding: 0;
+}
+
+body dl dt {
+    padding: 0;
+    margin-top: 16px;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+body dl dd {
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+body table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+}
+
+body table th {
+    font-weight: bold
+}
+
+body table th,
+body table td {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+}
+
+body table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+body table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+body img {
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: #fff;
+}
+
+body img[align=right] {
+    padding-left: 20px;
+}
+
+body img[align=left] {
+    padding-right: 20px;
+}
+
+body .emoji {
+    max-width: none;
+    vertical-align: text-top;
+    background-color: transparent;
+}
+
+body span.frame {
+    display: block;
+    overflow: hidden;
+}
+
+body span.frame>span {
+    display: block;
+    float: left;
+    width: auto;
+    padding: 7px;
+    margin: 13px 0 0;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+body span.frame span img {
+    display: block;
+    float: left;
+}
+
+body span.frame span span {
+    display: block;
+    padding: 5px 0 0;
+    clear: both;
+    color: #333;
+}
+
+body span.align-center {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+body span.align-center>span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+body span.align-center span img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+body span.align-right {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+body span.align-right>span {
+    display: block;
+    margin: 13px 0 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+body span.align-right span img {
+    margin: 0;
+    text-align: right;
+}
+
+body span.float-left {
+    display: block;
+    float: left;
+    margin-right: 13px;
+    overflow: hidden;
+}
+
+body span.float-left span {
+    margin: 13px 0 0;
+}
+
+body span.float-right {
+    display: block;
+    float: right;
+    margin-left: 13px;
+    overflow: hidden;
+}
+
+body span.float-right>span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+body code,
+body tt {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 3px;
+}
+
+body code::before,
+body code::after,
+body tt::before,
+body tt::after {
+    letter-spacing: -0.2em;
+    content: "\A0";
+}
+
+body code br,
+body tt br {
+    display: none;
+}
+
+body del code {
+    text-decoration: inherit;
+}
+
+body pre {
+    word-wrap: normal;
+}
+
+body pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+}
+
+body .highlight {
+    margin-bottom: 16px;
+}
+
+body .highlight pre {
+    margin-bottom: 0;
+    word-break: normal;
+}
+
+body .highlight pre,
+body pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+
+body pre code,
+body pre tt {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+}
+
+body pre code::before,
+body pre code::after,
+body pre tt::before,
+body pre tt::after {
+    content: normal;
+}
+
+body .csv-data td,
+body .csv-data th {
+    padding: 5px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1;
+    text-align: left;
+    white-space: nowrap;
+}
+
+body .csv-data .blob-line-num {
+    padding: 10px 8px 9px;
+    text-align: right;
+    background: #fff;
+    border: 0;
+}
+
+body .csv-data tr {
+    border-top: 0;
+}
+
+body .csv-data th {
+    font-weight: bold;
+    background: #f8f8f8;
+    border-top: 0;
+}
+
+body kbd {
+    display: inline-block;
+    padding: 3px 5px;
+    font-size: 11px;
+    line-height: 10px;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fcfcfc;
+    border: solid 1px #ccc;
+    border-bottom-color: #bbb;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #bbb;
+}
+
+/* for markdown-body */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 758px;
+    overflow: visible !important;
+}
+/*fixed style for bootstrap comflict*/
+
+body .emoji {
+vertical-align: top;
+}
+
+body pre {
+    border: inherit !important;
+}
+
+body code {
+    color: inherit !important;
+}
+
+body pre code .wrapper {
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+}
+
+body pre code .gutter {
+    float: left;
+    overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body pre code .gutter.linenumber {
+    text-align: right;
+    position: relative;
+    display: inline-block;
+    cursor: default;
+    z-index: 4;
+    padding: 0 8px 0 0;
+    min-width: 20px;
+    box-sizing: content-box;
+    color: #afafaf !important;
+    border-right: 3px solid #6ce26c !important;
+}
+
+body pre code .gutter.linenumber > span:before {
+    content: attr(data-linenumber);
+}
+
+body pre code .code {
+    float: left;
+    margin: 0 0 0 16px;
+}
+
+body .gist .line-numbers {
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+body .gist .line-data {
+    border: none;
+}
+
+body .gist table {
+    border-spacing: 0;
+    border-collapse: inherit !important;
+}
+
+body code[data-gist-id] {
+    background: none;
+    padding: 0;
+}
+
+body code[data-gist-id]:before {
+    content: ''
+}
+
+body code[data-gist-id]:after {
+    content: ''
+}
+
+body code[data-gist-id] .blob-num {
+    border: unset;
+}
+
+body code[data-gist-id] table {
+    overflow: unset;
+    margin-bottom: unset;
+}
+
+body code[data-gist-id] table tr {
+    background: unset;
+}
+
+/*fixed style for rtl in pre and code*/
+
+body[dir='rtl'] pre {
+    direction: ltr;
+}
+
+body[dir='rtl'] code {
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+body .alert > p {
+    margin-bottom: 0;
+}
+
+body pre.flow-chart,
+body pre.sequence-diagram,
+body pre.graphviz,
+body pre.mermaid,
+body pre.abc {
+    text-align: center;
+    background-color: inherit;
+    border-radius: 0;
+    white-space: inherit;
+}
+
+body pre.flow-chart > code,
+body pre.sequence-diagram > code,
+body pre.graphviz > code,
+body pre.mermaid > code,
+body pre.abc > code {
+    text-align: left;
+}
+
+body pre.flow-chart > svg,
+body pre.sequence-diagram > svg,
+body pre.graphviz > svg,
+body pre.mermaid > svg,
+body pre.abc > svg {
+    max-width: 100%;
+    height: 100%;
+}
+
+body pre > code.wrap {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+body .alert > p,
+body .alert > ul {
+    margin-bottom: 0;
+}
+
+body summary {
+    display: list-item;
+}
+
+body summary:focus {
+    outline: none;
+}
+
+body details summary {
+    cursor: pointer;
+}
+
+body details:not([open]) > *:not(summary) {
+    display: none;
+}
+
+body figure {
+    margin: 1em 40px;
+}
+
+body .mark,
+body mark {
+    background-color: #fff1a7;
+}
+body.slides {
+position: relative;
+z-index: 1;
+color: #222;
+}
+
+body.slides::before {
+content: '';
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: -1;
+background-color: currentColor;
+box-shadow: 0 0 0 50vw;
+}
+
+body.slides section[data-markdown] {
+position: relative;
+margin-bottom: 1.5em;
+background-color: #fff;
+text-align: center;
+}
+
+body.slides section[data-markdown] code {
+text-align: left;
+}
+
+body.slides section[data-markdown]::before {
+content: '';
+display: block;
+padding-bottom: 56.23%;
+}
+
+body.slides section[data-markdown] > div:first-child {
+position: absolute;
+top: 50%;
+left: 1em;
+right: 1em;
+transform: translateY(-50%);
+max-height: 100%;
+overflow: hidden;
+}
+
+body.slides section[data-markdown] > ul {
+display: inline-block;
+}
+
+body.slides > section > section + section::after {
+content: '';
+position: absolute;
+top: -1.5em;
+right: 1em;
+height: 1.5em;
+border: 3px solid #777;
+}
+@charset "UTF-8";
+@media (min-width: 992px) {
+.navbar-brand {
+    padding-right: 32px; } }
